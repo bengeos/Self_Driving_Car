@@ -1,5 +1,6 @@
 __author__ = 'BENGEOS-PC'
 import numpy as np
+from numpy import linalg as alg
 from matplotlib import pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -14,8 +15,6 @@ def plotPoints(X,Y):
 def hypothesis(x,theta1,theta2):
     return theta1 + theta2*x
 
-
-
 def costFunc(theta1,theta2,Training,output):
     z = hypothesis(Training,theta1,theta2) - output
     z = z * z
@@ -23,33 +22,28 @@ def costFunc(theta1,theta2,Training,output):
     z = z/2
     z = z/len(Training)
     return  z
+
 def gradientDescent(thetha1,thetha2,X,Y,R,min):
-    condition = min + 100
     T0 = thetha1
     T1 = thetha2
-    while(min <= condition):
-        diff1 = hypothesis(X,T0,T1) - Y
-        diff1 = R*np.sum(diff1)/len(X)
-        update1 = T0 - diff1
-
-        diff2 = hypothesis(X,T0,T1) - Y
-        diff2 = diff2 * X
-        diff2 = R*np.sum(diff2)/len(X)
-        update2 = T1 - diff2
-        condition = update1
-        if(condition<update2):
-            condition = update2
-        T0 = update1
-        T1 = update2
+    for i in range(10):
+        cost = costFunc(T0,T1,X,Y)
+        t0 = T0 - R*sum((hypothesis(X,T0,T1)-Y))
+        t1 = T1 - R*sum((hypothesis(X,T0,T1)-Y)*X)
+        T0 = t0
+        T1 = t1
+        #optimization is needed
+        print(T0,T1,cost)
     return T0,T1
 
+Train = np.mat(x)
+TrainSet = np.ones((len(x),2))
+TrainSet[:,1] = Train
+TrainSet = np.mat(TrainSet)
+Y = np.mat(y).T
+new_mat = TrainSet.T*TrainSet
+print(alg.inv(new_mat)*TrainSet.T*Y)
 
-t0,t1 = gradientDescent(2,3,x,y,1,0.01)
-print(gradientDescent(2,3,x,y,1,0.01))
-plt.plot(x,y,'ro')
-yy = hypothesis(x,t0,t1)
-plt.plot(x,yy,'y')
-plt.show()
 def drawBars3D():
     fig = plt.figure()
     ax = fig.add_subplot(111,projection='3d')
