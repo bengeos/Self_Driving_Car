@@ -12,8 +12,14 @@ def drawPoints():
     y = [2,10,20,2,6]
     plt.plot(x,y,'ro')
     plt.show()
+def damped(t):
+    return np.exp(-t) * np.cos(2*np.pi*t)
+t1 = np.arange(0.0, 5.0, 0.1)
+t2 = np.arange(0.0, 5.0, 0.02)
 
-
-drawPoints()
-plt.plot(np.random.normal(5,4,100),np.random.normal(10,7,100),'ro')
+plt.figure(1)
+plt.subplot(211)
+plt.plot(t1, damped(t1), 'bo', t2, damped(t2), 'k')
+plt.subplot(212)
+plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
 plt.show()
