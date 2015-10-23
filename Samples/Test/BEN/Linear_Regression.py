@@ -17,11 +17,8 @@ def hypothesis(x,theta1,theta2):
 
 def costFunc(theta1,theta2,Training,output):
     z = hypothesis(Training,theta1,theta2) - output
-    z = z * z
-    z = np.sum(z)
-    z = z/2
-    z = z/len(Training)
-    return  z
+    z = np.sum(z * z)/(2*len(Training))
+    return z
 
 def gradientDescent(thetha1,thetha2,X,Y,R,min):
     T0 = thetha1
@@ -36,13 +33,7 @@ def gradientDescent(thetha1,thetha2,X,Y,R,min):
         print(T0,T1,cost)
     return T0,T1
 
-Train = np.mat(x)
-TrainSet = np.ones((len(x),2))
-TrainSet[:,1] = Train
-TrainSet = np.mat(TrainSet)
-Y = np.mat(y).T
-new_mat = TrainSet.T*TrainSet
-print(alg.inv(new_mat)*TrainSet.T*Y)
+print(costFunc(0,1,x,y))
 
 def drawBars3D():
     fig = plt.figure()
