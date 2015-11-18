@@ -7,21 +7,16 @@ class Camera(threading.Thread):
         self.Cam_Num = Cam_Num
         self.Cap = cv.VideoCapture(self.Cam_Num)
         self.Image = self.cap_img()
+        self.isRunning = True
     def cap_img(self):
         state,img = self.Cap.read()
         cv.waitKey(10)
         return img
     def run(self):
-        while(self.Cap.isOpened):
+        while(self.Cap.isOpened and self.isRunning):
             state,self.Image = self.Cap.read()
-            print("Thread",self.Image)
+            print("Threading .....")
     def get_image(self):
         cv.waitKey(10)
         return self.Image
 
-
-
-
-C1 = Camera(0)
-C1.start()
-print(C1.get_image())
