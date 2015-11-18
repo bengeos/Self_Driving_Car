@@ -1,4 +1,4 @@
-__author__ = 'BENGEOS-PC'
+__author__ = 'Kilet'
 import cv2 as cv
 import threading
 class Camera(threading.Thread):
@@ -18,10 +18,6 @@ class Camera(threading.Thread):
     def get_image(self):
         cv.waitKey(10)
         return self.Image
-
-
-
-
 C1 = Camera(0)
 C1.start()
 print(C1.get_image())
