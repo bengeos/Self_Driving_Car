@@ -19,9 +19,3 @@ class Camera(threading.Thread):
         cv.waitKey(10)
         return self.Image
 
-
-
-
-C1 = Camera(0)
-C1.start()
-
