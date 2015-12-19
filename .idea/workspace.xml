@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Camera.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.6450939" vertical-offset="31" max-vertical-offset="510">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding>
                 <element signature="e#26#42#0" expanded="true" />
               </folding>
@@ -82,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_Module.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test_Module.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Test_Module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24843423" vertical-offset="0" max-vertical-offset="479">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
                 <element signature="e#26#51#0" expanded="true" />
@@ -163,9 +163,9 @@
         <option value="$PROJECT_DIR$/Samples/Test/Shanti/creating a class/test 1/tst.py" />
         <option value="$PROJECT_DIR$/Samples/Test/Shanti/creating a class/test 1/test123.py" />
         <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/New_Camera.py" />
-        <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py" />
         <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Input_Module.py" />
         <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Test_Module.py" />
+        <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py" />
       </list>
     </option>
   </component>
@@ -985,16 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#26#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Input_Module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="561">
@@ -1007,10 +997,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Test_Module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24843423" vertical-offset="0" max-vertical-offset="479">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
             <element signature="e#26#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6450939" vertical-offset="31" max-vertical-offset="510">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#26#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

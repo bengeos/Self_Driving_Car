@@ -10,4 +10,3 @@ class camera:
      return bool
  def stop(self):
      return bool
- 

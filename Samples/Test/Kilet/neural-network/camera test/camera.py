@@ -1,4 +1,4 @@
-__author__ = 'BENGEOS-PC'
+__author__ = 'Kilet'
 import cv2 as cv
 import threading
 class Camera(threading.Thread):
@@ -7,18 +7,17 @@ class Camera(threading.Thread):
         self.Cam_Num = Cam_Num
         self.Cap = cv.VideoCapture(self.Cam_Num)
         self.Image = self.cap_img()
-        self.isRunning = True
     def cap_img(self):
         state,img = self.Cap.read()
         cv.waitKey(10)
         return img
     def run(self):
-        while(self.Cap.isOpened and self.isRunning):
+        while(self.Cap.isOpened):
             state,self.Image = self.Cap.read()
-            print("Threading .....")
+            print("Thread",self.Image)
     def get_image(self):
         cv.waitKey(10)
         return self.Image
-    def Stop(self):
-        self.isRunning = False
-
+C1 = Camera(0)
+C1.start()
+print(C1.get_image())
