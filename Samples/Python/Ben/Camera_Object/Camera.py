@@ -20,4 +20,4 @@ class Camera(threading.Thread):
         cv.waitKey(10)
         return self.Image
     def Stop(self):
-        self.isRunning = 0
+        self.isRunning = False

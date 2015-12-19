@@ -24,13 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="digits.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Samples/Test/Shanti/neural network/My_Neurone/Data/digits.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="tst.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Samples/Test/Shanti/creating a class/test 1/tst.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Camera.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Camera.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60334027" vertical-offset="0" max-vertical-offset="479">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="e#26#42#0" expanded="true" />
               </folding>
@@ -80,9 +73,23 @@
       <file leaf-file-name="Input_Module.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Input_Module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="561">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#26#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_Module.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Test_Module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24843423" vertical-offset="0" max-vertical-offset="479">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding>
+                <element signature="e#26#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,9 +162,10 @@
         <option value="$PROJECT_DIR$/Samples/Test/Shanti/camtest/camtest.py" />
         <option value="$PROJECT_DIR$/Samples/Test/Shanti/creating a class/test 1/tst.py" />
         <option value="$PROJECT_DIR$/Samples/Test/Shanti/creating a class/test 1/test123.py" />
-        <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Input_Module.py" />
-        <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py" />
         <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/New_Camera.py" />
+        <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py" />
+        <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Input_Module.py" />
+        <option value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Test_Module.py" />
       </list>
     </option>
   </component>
@@ -325,26 +333,7 @@
       <recent name="C:\Users\Shantii\Documents\Self_Driving_Car\Samples\Test\Shanti\camtest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.New_Camera">
-    <configuration default="false" name="Test_Mat" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples/Test/Shanti/neural network/test 0-9" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Self_Driving_Car" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Samples/Test/Shanti/neural network/test 0-9/Test_Mat.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Test_Module">
     <configuration default="false" name="camtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -415,6 +404,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Self_Driving_Car" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/New_Camera.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test_Module" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Self_Driving_Car" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Test_Module.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -544,19 +552,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Test_Mat" />
-      <item index="1" class="java.lang.String" itemvalue="Python.camtest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tst" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test123" />
-      <item index="4" class="java.lang.String" itemvalue="Python.New_Camera" />
+      <item index="0" class="java.lang.String" itemvalue="Python.camtest" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tst" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test123" />
+      <item index="3" class="java.lang.String" itemvalue="Python.New_Camera" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Test_Module" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.New_Camera" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test123" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tst" />
-        <item index="3" class="java.lang.String" itemvalue="Python.camtest" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Test_Mat" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Test_Module" />
+        <item index="1" class="java.lang.String" itemvalue="Python.New_Camera" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test123" />
+        <item index="3" class="java.lang.String" itemvalue="Python.tst" />
+        <item index="4" class="java.lang.String" itemvalue="Python.camtest" />
       </list>
     </recent_temporary>
   </component>
@@ -609,23 +617,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Samples/Test/Shanti/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Samples/Test/Shanti/linear rg test 1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Python/MatPlot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="510">
@@ -976,14 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Input_Module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/New_Camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
@@ -994,12 +977,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmEdu10/system/python_stubs/-762174762/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55150217" vertical-offset="2599" max-vertical-offset="38811">
+          <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Camera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60334027" vertical-offset="0" max-vertical-offset="479">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding>
             <element signature="e#26#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Input_Module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="561">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#26#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Samples/Python/Ben/Camera_Object/Test_Module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24843423" vertical-offset="0" max-vertical-offset="479">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#26#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
