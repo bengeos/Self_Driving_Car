@@ -1,6 +1,8 @@
 __author__ = 'BENGEOS-PC'
 import Camera as cam
 import cv2 as cv
+import numpy as np
+
 class Camera_Module(object):
     def __init__(self,Cam_Num):
         self.Cam_Num = Cam_Num
@@ -25,3 +27,8 @@ class Camera_Module(object):
         elif(type == 2):
             New_CHN = cv.COLOR_BGR2RGB
         return New_CHN
+    def get_ImageArray(self,Image_Size,Image_Type):
+        img = self.get_NewImage(Image_Size,Image_Type)
+        shp = np.shape(img)
+        img_array = img.reshape(-1,shp[0]*shp[1])
+        return img_array

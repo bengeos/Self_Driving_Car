@@ -15,7 +15,7 @@ class Camera(threading.Thread):
     def run(self):
         while(self.Cap.isOpened and self.isRunning):
             state,self.Image = self.Cap.read()
-            print("Threading .....")
+            #print("Threading .....")
     def get_image(self):
         cv.waitKey(10)
         return self.Image
