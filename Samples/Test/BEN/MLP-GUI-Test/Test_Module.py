@@ -7,7 +7,7 @@ import time as tm
 import numpy as np
 
 #Initialize the Neural Network
-net2 = My_Net.MLP([1600,100,50,10])
+net2 = My_Net.MLP([2500,100,50,10])
 
 #initilize Data Storages
 training_inputs = []
@@ -86,25 +86,29 @@ Port = sp.Serial('COM4',9600)
 tm.sleep(3)
 auto = 0
 while(1):
-    img = cam.get_NewImage((40,40),0)
+    img = cam.get_NewImage((50,50),0)
     img_ = img.copy()
     cv.imshow("BEN",cv.resize(img_,(700,500)))
     k = cv.waitKey(100)
     if(k == 112):
         print('Moving to the Right')
         Port.write('p\r\n')
+        print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,3)
     if(k == 111):
         print('Moving to the Forward')
         Port.write('o\r\n')
+        print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,2)
     if(k == 105):
         print('Moving to the Left')
         Port.write('i\r\n')
+        print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,1)
     if(k == 108):
         print('Moving to the Backwrd')
         Port.write('l\r\n')
+        print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,4)
     if(k == 116):
         print '***********************'
@@ -114,7 +118,9 @@ while(1):
         print 'MLP Finished Lerning!'
         print '***********************'
     if(k == 114):
+        print '***********************'
         Reset_All()
+        print '***********************'
     if(k == 97):
         if(auto == 0):
             auto = 1
