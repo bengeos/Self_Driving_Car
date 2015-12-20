@@ -6,7 +6,7 @@ cam = cv.VideoCapture(0)
 cv.namedWindow('Key Logger')
 cv.resizeWindow('Key Logger',500,500)
 Port = sp.Serial('COM4',9600)
-
+tm.sleep(3)
 while(cam.isOpened):
     k = cv.waitKey(5000)
     if(k == 112):
