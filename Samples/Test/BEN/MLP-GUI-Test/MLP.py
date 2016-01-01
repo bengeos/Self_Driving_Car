@@ -1,6 +1,8 @@
 __author__ = 'BENGEOS-PC'
 import numpy as np
 from matplotlib import pyplot as plt
+import xml.etree.ElementTree as ET
+
 def sigmoid(z):
     return 1.0/(1.0+np.exp(-z))
 def sigmoid_der(z):
@@ -21,6 +23,16 @@ class MLP(object):
         for b, w in zip(self.Biases, self.Weights):
             X_Input = sigmoid(np.dot(w, X_Input)+b)
         return X_Input
+    def Save(self):
+        Network = ET.Element("Neural_Network")
+        for x in self.Weights:
+            layer = ET.SubElement(Network,"Layer")
+            for y in x:
+                Neurone = ET.SubElement(layer,"Neurone")
+                for z in y:
+                    ET.SubElement(Neurone,"Weight").text = str(z)
+        tree = ET.ElementTree(Network)
+        tree.write("MLP_WEIGHT.xml","UTF-8")
     def Backward(self,x_Input,y_Output):
         _biases = [np.zeros(b.shape) for b in self.Biases]
         _weights = [np.zeros(w.shape) for w in self.Weights]

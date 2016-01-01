@@ -6,6 +6,7 @@ import serial as sp
 import time as tm
 import numpy as np
 
+
 #Initialize the Neural Network
 net2 = My_Net.MLP([2500,100,50,10])
 
@@ -37,6 +38,7 @@ def append_Trianing(img,val):
     training_result.append(val)
     #print np.shape(_data_)
 def evaluate_this(img):
+    t1 = tm.clock();
     img_shp = np.shape(img)
     _data_ = img.reshape(-1,img_shp[0]*img_shp[1]).astype(np.float32)
     vv = []
@@ -62,6 +64,8 @@ def evaluate_this(img):
     if(res[0] == 4):
         print('Moving to the BACKWARD')
         Port.write('l\r\n')
+    t2 = tm.clock()
+    print('Time: ', t2 - t1)
     print '***********************'
 def Train_MLP():
     print training_result
@@ -82,7 +86,7 @@ def Train_MLP():
 
 cv.namedWindow('Key Logger')
 cv.resizeWindow('Key Logger',500,500)
-Port = sp.Serial('COM4',9600)
+Port = sp.Serial('COM1',9600)
 tm.sleep(3)
 auto = 0
 while(1):
@@ -131,6 +135,11 @@ while(1):
         print 'Evaluating Current Image ...'
         print '***********************'
         evaluate_this(img)
+    if(k == 115):
+        print '***********************'
+        print 'Saving MLP Weights'
+        print '***********************'
+        net2.Save()
     if(k == 101):
         net2.init_Weight()
         Reset_All();
