@@ -2,6 +2,7 @@ __author__ = 'BENGEOS-PC'
 import numpy as np
 from matplotlib import pyplot as plt
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 
 def sigmoid(z):
     return 1.0/(1.0+np.exp(-z))
@@ -33,6 +34,20 @@ class MLP(object):
                     ET.SubElement(Neurone,"Weight").text = str(z)
         tree = ET.ElementTree(Network)
         tree.write("MLP_WEIGHT.xml","UTF-8")
+
+    def ReadXML(self,File_Name):
+        doc = minidom.parse(File_Name)
+        Networks = doc.getElementsByTagName("Neural_Network")
+        for Network in Networks:
+            Layers = Network.getElementsByTagName("Layer")
+            for Neurones in Layers:
+                Neurones = Neurones.getElementsByTagName("Neurone")
+                for Weights in Neurones:
+                    Params = Weights.getElementsByTagName("Weight")
+                    for Weight in Params:
+                        print(Weight.firstChild.data)
+
+
     def Backward(self,x_Input,y_Output):
         _biases = [np.zeros(b.shape) for b in self.Biases]
         _weights = [np.zeros(w.shape) for w in self.Weights]
