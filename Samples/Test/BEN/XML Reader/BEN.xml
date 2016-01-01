@@ -1,13 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Root>
-	<doc>
-		<FirstName>Biniam</FirstName>
-		<LastName>Kassahun</LastName>
-		<FirstName>Biniam</FirstName>
-		<LastName>Kassahun</LastName>
-		<FirstName>Biniam</FirstName>
-		<LastName>Kassahun</LastName>
-		<FirstName>Biniam</FirstName>
-		<LastName>Kassahun</LastName>
-	</doc>
-</Root>
+<Neural_Network><Layer><Neurone><Weight>1.95118687357</Weight><Weight>-0.899580696413</Weight></Neurone><Neurone><Weight>-0.628133092493</Weight><Weight>0.958419093316</Weight></Neurone><Neurone><Weight>-0.166595136098</Weight><Weight>0.0136906313315</Weight></Neurone></Layer></Neural_Network>

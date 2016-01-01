@@ -1,6 +1,6 @@
 import numpy as np
 import xml.etree.ElementTree as ET
-Network_Shape = [10,2,3]
+Network_Shape = [2,3]
 weights = [np.random.randn(i,j) for j,i in zip(Network_Shape[:-1],Network_Shape[1:])]
 print(weights)
 
@@ -12,8 +12,8 @@ for x in weights:
         for z in y:
             ET.SubElement(Neuron,"Weight").text = str(z)
 
-#tree = ET.ElementTree(Network)
-#tree.write("BEN.xml","UTF-8")
+tree = ET.ElementTree(Network)
+tree.write("BEN.xml","UTF-8")
 
 new_weight = np.array([])
 bb = ET.parse('BEN.xml')
