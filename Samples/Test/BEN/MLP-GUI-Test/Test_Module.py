@@ -94,26 +94,31 @@ while(1):
     img_ = img.copy()
     cv.imshow("BEN",cv.resize(img_,(700,500)))
     k = cv.waitKey(100)
+    #when "P" pressed
     if(k == 112):
         print('Moving to the Right')
         Port.write('p\r\n')
         print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,3)
+    #when "O" Pressed
     if(k == 111):
         print('Moving to the Forward')
         Port.write('o\r\n')
         print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,2)
+    #When "I" Pressed
     if(k == 105):
         print('Moving to the Left')
         Port.write('i\r\n')
         print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,1)
+    #When "L" Pressed
     if(k == 108):
         print('Moving to the Backwrd')
         Port.write('l\r\n')
         print('Append Data: ', len(training_inputs)+1)
         append_Trianing(img,4)
+    #When "T" Pressed
     if(k == 116):
         print '***********************'
         print 'MLP Start to Learn ...'
@@ -130,19 +135,27 @@ while(1):
             auto = 1
         else:
             auto = 0
+    #When "C" Pressed
     if(k == 99):
         print '***********************'
         print 'Evaluating Current Image ...'
         print '***********************'
         evaluate_this(img)
+    #When "S" Pressed
     if(k == 115):
         print '***********************'
         print 'Saving MLP Weights'
         print '***********************'
         net2.Save()
+    #When "D" Pressed
+    if(k == 100):
+        print '***********************'
+        print 'Loading XMl Data'
+        print '***********************'
+        net2.ReadXML()
+    #When "E" pressed
     if(k == 101):
         net2.init_Weight()
-        Reset_All();
         print '***********************'
         print 'Restarting MLP ...'
         print 'MLP Stopped'
