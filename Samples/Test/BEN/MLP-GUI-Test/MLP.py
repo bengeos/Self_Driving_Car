@@ -35,18 +35,18 @@ class MLP(object):
         tree = ET.ElementTree(Network)
         tree.write("MLP_WEIGHT.xml","UTF-8")
 
-    def ReadXML(self,File_Name):
-        doc = minidom.parse(File_Name)
-        Networks = doc.getElementsByTagName("Neural_Network")
-        for Network in Networks:
-            Layers = Network.getElementsByTagName("Layer")
-            for Neurones in Layers:
-                Neurones = Neurones.getElementsByTagName("Neurone")
-                for Weights in Neurones:
-                    Params = Weights.getElementsByTagName("Weight")
-                    for Weight in Params:
-                        print(Weight.firstChild.data)
-
+    def ReadXML(self):
+        doc = ET.parse("MLP_WEIGHT.xml")
+        Nets = []
+        for Layers in doc.findall('Layer'):
+            Neur = []
+            for Neurones in Layers.findall('Neurone'):
+                Param = []
+                for Weights in Neurones.findall('Weight'):
+                    Param.append(float(Weights.text))
+                Neur.append(Param)
+            Nets.append(np.array(Neur))
+        self.Weights = Nets
 
     def Backward(self,x_Input,y_Output):
         _biases = [np.zeros(b.shape) for b in self.Biases]
