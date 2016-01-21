@@ -9,7 +9,6 @@ import numpy as np
 
 #Initialize the Neural Network
 net2 = My_Net.MLP([2500,100,50,10])
-
 #initilize Data Storages
 training_inputs = []
 training_result = []
@@ -126,10 +125,12 @@ while(1):
         Train_MLP()
         print 'MLP Finished Lerning!'
         print '***********************'
+    #When "R" Pressed
     if(k == 114):
         print '***********************'
         Reset_All()
         print '***********************'
+    #When "A" Pressed
     if(k == 97):
         if(auto == 0):
             auto = 1
@@ -155,10 +156,9 @@ while(1):
         net2.ReadXML()
     #When "E" pressed
     if(k == 101):
-        net2.init_Weight()
+        net2.Reset_Weights()
         print '***********************'
         print 'Restarting MLP ...'
-        print 'MLP Stopped'
         print 'MLP Started'
         print '***********************'
     if(k == 27):

@@ -1,8 +1,6 @@
 __author__ = 'BENGEOS-PC'
 import numpy as np
-from matplotlib import pyplot as plt
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 
 def sigmoid(z):
     return 1.0/(1.0+np.exp(-z))
@@ -20,6 +18,8 @@ class MLP(object):
     def init_Weight(self):
         weights = [np.random.randn(i,j) for j,i in zip(self.Network_Shape[:-1],self.Network_Shape[1:])]
         return weights
+    def Reset_Weights(self):
+        self.Weights = self.init_Weight()
     def Forward(self,X_Input):
         for b, w in zip(self.Biases, self.Weights):
             X_Input = sigmoid(np.dot(w, X_Input)+b)
