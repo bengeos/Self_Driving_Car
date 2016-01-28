@@ -89,7 +89,8 @@ Port = sp.Serial('COM1',9600)
 tm.sleep(3)
 auto = 0
 while(1):
-    img = cam.get_NewImage((50,50),0)
+    #img = cam.get_NewImage((50,50),0)
+    img = cv.imread('ben.jpg')
     img_ = img.copy()
     cv.imshow("BEN",cv.resize(img_,(700,500)))
     k = cv.waitKey(100)
